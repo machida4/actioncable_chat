@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'chat_messages/index'
   root 'rooms#index'
   get 'rooms/index'
   get 'rooms/show'
