@@ -1,0 +1,5 @@
+h1 Rooms#index
+p Find me in app/views/rooms/index.html.slim
+
+- @rooms.each do |room|
+  h2 = link_to room.name, rooms_show_path(room.id)
