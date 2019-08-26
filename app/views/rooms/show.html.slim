@@ -1,2 +1,6 @@
 h1 Rooms#show
 p Find me in app/views/rooms/show.html.slim
+
+- @chat_messages.each do |chat_message|
+  p = chat_message.name
+  p = chat_message.content
