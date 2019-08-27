@@ -4,5 +4,4 @@ p Find me in app/views/rooms/show.html.slim
 = link_to "ルーム一覧に戻る", rooms_index_path
 
 - @chat_messages.each do |chat_message|
-  p = chat_message.name
-  p = chat_message.content
+  p = "#{chat_message.name}: #{chat_message.content}"
